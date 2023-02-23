@@ -56,9 +56,18 @@ h1 {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
+.cardWrapper { width: 100%; overflow-x:visible; }
 .card {
   padding: 2em;
+  white-space: nowrap;
+  width: 300px;
+  overflow-x:scroll;
 }
+
+.card > div {display:inline; margin:0 0.2em;}
+.card span {pointer-events:none}
+.card  a { border:1px solid #777; border-radius:10px; background-color:#777; padding:0.2em 0.3em; color:#fff}
+.card a:hover {text-decoration:none; color:#aaa; cursor:pointer}
 
 .read-the-docs {
   color: #888;
